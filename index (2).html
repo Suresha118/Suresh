@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suresh Shoe Mart - Samarlakota</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0; padding: 0;
+            background-color: #fff0f6;
+            color: #333;
+        }
+        header {
+            background-color: #ff66a3;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #ff4d88;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            background: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px #000000cc;
+        }
+        section {
+            padding: 30px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        h2 {
+            color: #d6336c;
+            margin-bottom: 20px;
+        }
+        .products {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            width: 220px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            margin: 15px 0 5px 0;
+            color: #ff4081;
+        }
+        .product-card p {
+            padding: 0 10px 15px 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        .btn {
+            background-color: #ff4081;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 20px auto;
+            display: block;
+            width: fit-content;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #e6005c;
+        }
+        footer {
+            background-color: #ff66a3;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 40px;
+        }
+        .contact-info {
+            margin: 15px 0;
+            font-size: 16px;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Suresh Shoe Mart
+</header>
+
+<nav>
+    <a href="#home">హోమ్</a>
+    <a href="#about">మా గురించి</a>
+    <a href="#products">ఉత్పత్తులు</a>
+    <a href="#offers">ఆఫర్లు</a>
+    <a href="#contact">సంప్రదించండి</a>
+</nav>
+
+<div id="home" class="banner">
+    ' Trendy Footwear in Samarlakota
+</div>
+
+<section id="about">
+    <h2>మా గురించి</h2>
+    <p>
+        AnuHima Shoe Emporium మీకు ఆధునిక మరియు సంప్రదాయ శైలిలో ఉన్న ఆడపిల్లల కాలుష్యాల కోసం విశ్వసనీయమైన షాప్.  
+        మీ అందం మరియు సౌకర్యానికి అనుగుణంగా మా ఫ్యాషన్ షూలను ఆపేక్షించండి.
+    </p>
+</section>
+
+<section id="products">
+    <h2>ఉత్పత్తులు</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80" alt="Stylish Heels" />
+            <h3>స్టైలిష్ హీల్స్</h3>
+            <p>ఫ్యాషనబుల్ మరియు ఎరగని హీల్స్ అన్ని సైజుల్లో అందుబాటులో ఉన్నాయి.</p>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400&q=80" alt="Comfortable Flats" />
+            <h3>కంపర్టబుల్ ఫ్లాట్స్</h3>
+            <p>రోజువారీ ధరలకు తగిన సౌకర్యవంతమైన ఫ్లాట్స్.</p>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1523275335684-7c749659a591?auto=format&fit=crop&w=400&q=80" alt="Traditional Footwear" />
+            <h3>సాంప్రదాయిక షూలు</h3>
+            <p>పండుగలకు అనుకూలంగా అందమైన సంప్రదాయ షూలు.</p>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=400&q=80" alt="Casual Shoes" />
+            <h3>క్యాజువల్ షూలు</h3>
+            <p>ప్రతిరోజు ఉపయోగానికి తగిన అనువైన షూలు.</p>
+        </div>
+    </div>
+    <a href="#contact" class="btn">మమ్మల్ని సంప్రదించండి</a>
+</section>
+
+<section id="offers">
+    <h2>ప్రత్యేక ఆఫర్లు</h2>
+    <ul>
+        <li>ఫెస్టివ్ సీజన్ స్లోకాలు - 20% వరకు తగ్గింపు!</li>
+        <li>రెండు షూలు కొనుగోలు చేస్తే మూడవది ఉచితం!</li>
+        <li>విద్యార్థులకు ప్రత్యేక తగ్గింపు.</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>సంప్రదించండి</h2>
+    <p class="contact-info">
+        అడ్రస్: Suresh Shoe Emporium, సమర్లకొట  
+        <br />
+        ఫోన్: +91 98765 43210  
+        <br />
+        ఇమెయిల్: info@anuhimashoes.com
+    </p>
+    <form style="max-width: 500px; margin:auto;">
+        <label for="name">పేరు:</label><br />
+        <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 15px;" /><br />
+
+        <label for="email">ఇమెయిల్:</label><br />
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 15px;" /><br />
+
+        <label for="message">సందేశం:</label><br />
+        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 8px;"></textarea><br />
+
+        <button type="submit" class="btn">పంపించండి</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2025 Suresh Shoe Mart, Samarlakota. అన్ని హక్కులు రిజర్వు.
+</footer>
+
+</body>
+</html>
